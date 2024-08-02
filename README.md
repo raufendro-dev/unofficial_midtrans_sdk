@@ -26,7 +26,7 @@ To use `unofficial_midtrans_sdk` in your Flutter project, follow these steps:
 
 2. **Install the package**:
 
-    Run flutter pub get to install the new dependency.
+    Run `flutter pub get` to install the new dependency.
 
 ## How to use
 
