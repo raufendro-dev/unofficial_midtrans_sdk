@@ -30,12 +30,12 @@ To use `unofficial_midtrans_sdk` in your Flutter project, follow these steps:
 
 ## How to use
 
-First, initialize the midtransSDK class with your API key and environment setting:
+First, initialize the MidtransSDK class with your API key and environment setting:
 
 ```dart
 import 'package:unofficial_midtrans_sdk/unofficial_midtrans_sdk.dart';
 
-final midtrans = midtransSDK(
+final midtrans = MidtransSDK(
   apikey: 'YOUR_API_KEY', // Replace with your Midtrans API key
   isProduction: false,    // Set to true for production environment
 );
@@ -92,7 +92,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  final midtrans = midtransSDK(
+  final midtrans = MidtransSDK(
     apikey: 'YOUR_API_KEY',
     isProduction: false,
   );
@@ -115,7 +115,7 @@ class MyApp extends StatelessWidget {
     );
   }
 
-  void makePayment(midtransSDK midtrans) async {
+  void makePayment(MidtransSDK midtrans) async {
     final response = await midtrans.pay({
       'transaction_details': {
         'order_id': 'ORDER_ID',
