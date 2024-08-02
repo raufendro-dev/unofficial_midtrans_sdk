@@ -2,13 +2,12 @@ library unofficial_midtrans_sdk;
 
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:flutter_config/flutter_config.dart';
 
-class midtransSDK {
+class MidtransSDK {
   late String apikey;
   late bool isProduction;
 
-  midtransSDK({required this.apikey, required this.isProduction});
+  MidtransSDK({required this.apikey, required this.isProduction});
 
   late var apiUrl = isProduction
       ? 'https://app.midtrans.com/snap/v1/transactions'
