@@ -31,8 +31,6 @@ class MidtransSDK {
   Future<Map<dynamic, dynamic>> status(String orderId) async {
     String url = 'https://api.sandbox.midtrans.com/v2/$orderId/status';
 
-    String authToken = apikey;
-
     Map<String, String> headers = {
       'Accept': 'application/json',
       'Authorization': 'Basic ${base64Encode(utf8.encode('$apikey:'))}'
