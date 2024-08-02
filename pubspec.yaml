@@ -1,7 +1,7 @@
 name: unofficial_midtrans_sdk
 description: A Flutter package for Android and iOS that simplifies and makes it easier for the lazy ones to use the Midtrans payment gateway in Flutter.
 version: 1.0.0
-homepage: null
+homepage: https://github.com/raufendro-dev/unofficial_midtrans_sdk
 
 environment:
   sdk: '>=2.19.6 <3.0.0'
